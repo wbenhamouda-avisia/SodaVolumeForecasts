@@ -1,0 +1,22 @@
+project:
+  name: soda-forecast
+  random_state: 42
+
+data:
+  input_path: data/raw/ds_assortiment_dataset.csv
+
+split:
+  test_start_date: "2017-09-01" # Max "2017-12-01"
+  val_size: 4
+
+target:
+  default: volume
+  pricing_scenario: realistic   # realistic | oracle
+
+artifacts:
+  base_dir: artifacts
+  model_path: artifacts/models/champion.pkl
+  metrics_dir: artifacts/reports
+
+training:
+  tune_models: true

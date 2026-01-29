@@ -1,0 +1,93 @@
+# =========================
+# Python virtual environments
+# =========================
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# Spécifique au projet Soda
+# =========================
+# On ignore toutes les données
+data/
+# Sauf le fichier .gitkeep s'il existe pour garder la structure
+!data/.gitkeep
+
+# On ignore tous les modèles et rapports générés
+artifacts/
+# Sauf les dossiers eux-mêmes pour garder la structure (optionnel)
+!artifacts/.gitkeep
+
+# On ignore les fichiers de build locaux
+soda_forecast.egg-info/
+
+# =========================
+# Python cache & compiled files
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Jupyter / IPython
+# =========================
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Logs & temporary files
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# =========================
+# OS specific
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs / Editors
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Build / distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Data / artifacts (optionnel)
+# =========================
+data/raw/
+data/interim/
+data/processed/
+models/
+outputs/
+
+# =========================
+# Coverage / tests
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
